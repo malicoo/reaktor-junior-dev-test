@@ -1,0 +1,14 @@
+{
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Reaktor\\": "src/"
+        }
+    },
+    "require":
+    {
+        "bramus/router": "^1.4.2",
+        "lavary/crunz": "^2.0"
+    }
+}
