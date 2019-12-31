@@ -8,12 +8,9 @@ $scheduler = new Schedule();
 
 $task = $scheduler->run(PHP_BINARY . ' command.php');
 
-$task
-    ->description('Generate Status Cache Files')
+$task->description('Generate Status Cache Files')
     ->in('src')
     ->preventOverlapping()
-    ->everyFiveMinutes()
-    ->weekdays()
-;
+    ->weekly();
 
 return $scheduler;
